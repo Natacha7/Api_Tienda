@@ -26,6 +26,7 @@ app.use(express.urlencoded({ extended: true }));
      res.send('Hola Mundo Mundial!');
     }); */
 app.use('/api', require('./routes/producto'));
+app.use('/api', require('./routes/cliente'));
 
 // Middleware para Vue.js router modo history
 const history = require('connect-history-api-fallback');
