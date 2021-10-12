@@ -7,7 +7,8 @@ const app = express();
 
 // Conexión base de datos
 const mongoose = require('mongoose');
-const uri = 'mongodb://localhost:27017/mujer_Real';
+//const uri = 'mongodb://localhost:27017/mujer_Real';
+const uri = 'mongodb+srv://dbMujerReal:MujerReal@cluster0.u0yjs.mongodb.net/mujer_Real?retryWrites=true&w=majority';
 const options = {useNewUrlParser: true, useUnifiedTopology: true};
 
 mongoose.connect(uri, options).then(
